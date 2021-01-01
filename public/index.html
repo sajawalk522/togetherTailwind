@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <title>Together</title>
+</head>
+
+<body>
+    <div class="w-full">
+        <!-- header section start -->
+        <div class="p-2 flex justify-center items-center bg-heading relative">
+            <img src="images/together.png" />
+        </div>
+         <!-- header section end -->
+
+         <!-- content section start  -->
+        <div class="flex justify-center py-12 bg-content">
+            <div class="w-52">
+                <div class="flex justify-center items-center rounded bg-color p-3">
+                    <h3>Same day Shipping from North Carolina</h3>
+                </div>
+                <div class="mobile-container flex justify-between mt-2.5">
+                    <div class="w-3/5">
+                        <div>
+                            <!-- checkbox section start  -->
+                            <div class="card-box">
+                                <div>
+                                    <h3>1. Select Quantity</h3>
+                                    <ul>
+                                        <li class="check-container">
+                                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox"
+                                                value="value1">
+                                            <label for="styled-checkbox-1">1 FREE KN95: Max-Sport</label>
+                                        </li>
+                                        <li class="check-container">
+                                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox"
+                                                value="value2" checked>
+                                            <label for="styled-checkbox-2">10 KN95: Max-Sport ($3.99/ea)</label>
+                                        </li>
+                                        <li class="check-container">
+                                            <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox"
+                                                value="value3">
+                                            <label for="styled-checkbox-3">30 KN95: Max-Sport</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Form section start  -->
+                            <div class="card-box box">
+                                <div>
+                                    <h3>2. Shipping</h3>
+                                    <form class="mb-6" action="/" method="post">
+                                        <div class="flex flex-col mb-4">
+
+                                            <input class="border py-3 px-3 text-grey-darkest" type="text" name="fname"
+                                                placeholder="Full Name">
+                                        </div>
+                                        <div class="flex flex-col mb-4">
+
+                                            <input class="border py-3 px-3 text-grey-darkest" type="text" name="email"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="flex flex-col mb-4">
+
+                                            <input class="border py-3 px-3 text-grey-darkest" type="number" name="phone"
+                                                placeholder="Phone">
+                                        </div>
+                                        <div class="grid grid-cols-3 gap-4 mb-6">
+                                            <div class="flex mb-6 ">
+
+                                                <input class="border py-3 px-3 text-grey-darkest w-full" name="city"
+                                                    placeholder="City">
+                                            </div>
+                                            <div class="flex mb-6">
+                                                <select class=" border py-3 px-3 text-grey-darkest w-full" name="state">
+                                                    <option value="State">State</option>
+                                                    <option value="State">State</option>
+                                                    <option value="State">State</option>
+                                                </select>
+                                            </div>
+                                            <div class="flex mb-6">
+
+                                                <input class="border py-3 px-3 text-grey-darkest w-full" type="number"
+                                                    name="zip" placeholder="ZIP" class="zip">
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li class="check-container pl-0">
+                                                <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox"
+                                                    value="value4">
+                                                <label for="styled-checkbox-4">Billing address is same as
+                                                    shipping</label>
+                                            </li>
+                                        </ul>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                            <!-- Payment section start  -->
+                            <div class="card-box box">
+                                <div>
+                                    <h3>3. Secure Payment</h3>
+                                    <div class="w-full payment">
+                                        <div class="flex justify-between">
+                                            <input type="text" id="payment"
+                                                class="w-2/5 flex-1 text-sm bg-grey-light text-grey-darkest rounded-l p-3 focus:outline-none"
+                                                placeholder="Card Number">
+                                            <input type="text" id="payment"
+                                                class="w-1/6 inline-block text-sm bg-grey-light text-grey-darkest p-3 focus:outline-none"
+                                                placeholder="MM / YY">
+                                            <input type="text" id="payment"
+                                                class="w-1/6 inline-block text-sm bg-grey-light text-grey-darkest rounded-r p-3 focus:outline-none"
+                                                placeholder="CVC">
+                                        </div>
+                                    </div>
+                                    <div class="finish flex justify-center items-center rounded p-3">
+                                        <a href="#"><img src="images/lock.png" />Finish Payment</a>
+                                    </div>
+                                    <div class="flex justify-center items-center p-5">
+                                        <img src="images/billing seals.svg" />
+                                    </div>
+                                    <div class="paypal-btn rounded p-3">
+                                        <a href="#" class="flex justify-center items-center w-full h-11"><img
+                                                src="images/paypal.png" class="w-26"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile view component  -->
+                        <div class="image-box mobile-box">
+                            <div class="p-2">
+                                <h3 class="mb-2">Order Total</h3>
+                                <div class="order-list">
+                                    <p class="flex justify-between m-0 py-2"><span>Subtotal</span> <span>$95.00</span>
+                                    </p>
+                                    <p class="flex justify-between m-0 py-2"><span>Shipping</span> <span>$2.99</span>
+                                    </p>
+                                    <h1 class="flex justify-between m-0 py-2"><span>Total</span> <span>$99.50</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right section start  -->
+                    <div class="w-4/12">
+                        <div class="image-box">
+                            <div>
+                                <h3 class="pb-3">KN95 Max-Sport Mask</h3>
+                                <div class="w-full rounded">
+                                    <img src="images/bag.png" class="w-full" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-box desktop-box">
+                            <div class="p-2">
+                                <h3 class="mb-2">Order Total</h3>
+                                <div class="order-list">
+                                    <p class="flex justify-between m-0 py-2"><span>Subtotal</span> <span>$95.00</span>
+                                    </p>
+                                    <p class="flex justify-between m-0 py-2"><span>Shipping</span> <span>$2.99</span>
+                                    </p>
+                                    <h1 class="flex justify-between m-0 py-2"><span>Total</span> <span>$99.50</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $("input:checkbox").on('click', function () {
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
+    var header = document.getElementById("checked");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active", "");
+            this.className += "active";
+        });
+    }
+</script>
